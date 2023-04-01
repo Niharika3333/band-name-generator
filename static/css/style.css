@@ -1,0 +1,7 @@
+.background-image{
+  background-image: url("/static/band-banner.jpg")
+}
+
+.container{
+  margin: 0 auto;
+}
