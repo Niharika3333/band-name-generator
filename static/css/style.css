@@ -1,5 +1,11 @@
 .background-image{
   background-image: url("/static/band-banner.jpg")
+  height: 500px;
+  width: 100%;
+}
+
+.white{
+  color: white;
 }
 
 .container{

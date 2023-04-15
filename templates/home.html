@@ -2,26 +2,8 @@
 <html>
   <head>
     <title> {{company_name}} Generator </title>
-    <link rel="icon" type="image/x-icon" href="/static/logo.png">
-    <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <style>
-      body{
-        background-color: rgb(226, 214, 236);
-      }
-      
-      .first-div{
-        background-color: rgb(100,100,150);
-        padding: 70px;
-        }
-      
-      .container{
-        margin: 0 auto;
-        padding: 10px;
-        text-align: center;
-        }
-    </style>
+    {% include 'bootstrap.html' %}
+    <link href="static/css/style.css" rel="stylesheet">
     <nav>
     {% include 'nav.html' %}
   </nav>
@@ -30,7 +12,7 @@
     <div class="container">
       <h1> Band Name Generator </h1>
       <br>
-      <div class="first-div">
+      <div class="first-div white">
         <h3> Don't know what to name your Band that is unique to you?</h3>
         <h4> Let us Help!</h4>
         {% include 'band.html' %}

@@ -9,7 +9,8 @@ def hello_world():
 @app.route("/", methods=["POST", "GET"])
 def generate():
   band_name = request.form["city_name"] + request.form["pet_name"]
-  return render_template('home.html', name=band_name )
+  return render_template('home.html', name=band_name)
+
 
 
 if __name__ == "__main__":
