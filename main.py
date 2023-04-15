@@ -6,10 +6,10 @@ app = Flask(__name__)
 def hello_world():
   return render_template('home.html', company_name="Band-Name")
 
-@app.route("/generate", methods=["POST", "GET"])
+@app.route("/", methods=["POST", "GET"])
 def generate():
   band_name = request.form["city_name"] + request.form["pet_name"]
-  return render_template('band.html', name=band_name )
+  return render_template('home.html', name=band_name )
 
 
 if __name__ == "__main__":
