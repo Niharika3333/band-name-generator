@@ -6,9 +6,9 @@ app = Flask(__name__)
 def hello_world():
   return render_template('home.html', company_name="Band-Name")
 
-@app.route("/", methods=["POST", "GET"])
+@app.route("/generate", methods=["POST", "GET"])
 def generate():
-  band_name = request.form["city_name"] + request.form["pet_name"]
+  band_name = ('"' + request.form["city_name"] + request.form["pet_name"] + '"')
   return render_template('home.html', name=band_name)
 
 
