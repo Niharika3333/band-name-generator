@@ -3,8 +3,8 @@
     margin: 10px;
   }
 </style>
-
 <div>
+  {% include 'bootstrap.html' %}
   <form action="generate" method="post">
     <div class="row">
       <br>
@@ -18,9 +18,11 @@
       <br>
     </div>
     <br>
-    <input type="submit" value="Generate">
+    <div class="btn-outline-primary">
+      <input type="submit" value="Generate">
+    </div>
     <br>
   </form>
   <br>
-  <h1 class="white"> Your Band name can be: {{ name }}</h1>
+  <h1 class="white"> Your Band Name Can Be: {{ name }}</h1>
 </div>
